@@ -1,7 +1,10 @@
 import listImg from '../img/Group 39530.png'
 import offerImg from '../img/Frame 39606.png'
 
-const Services = () => {
+const Services = ({logo, dayLogo}) => {
+    const offerClass = logo === dayLogo ? 'offer-night' : 'offer-day'
+    const boxClass = logo === dayLogo ? 'service__box-night' : 'service__box-day'
+
     return (
         <section className='service'>
             <div className='service__request'>
@@ -15,25 +18,25 @@ const Services = () => {
             <div className='offer'>
                 <h3><span className='text'>What we offer </span><span className='arr'>&darr;</span></h3>
                 <ul className='offer__list'>
-                    <li className='offer__list--item'>
+                    <li className={`offer__list--item ${offerClass}`}>
                         <p className='jobs'>08 Jobs</p>
                         <h4>Branding</h4>
                         <p className='body'>we are aimed at helping companies across various industries transform their operations </p>
                         <img src={listImg} alt='' />
                     </li>
-                    <li className='offer__list--item'>
+                    <li className={`offer__list--item ${offerClass}`}>
                         <p className='jobs'>08 Jobs</p>
                         <h4>Web Dev...</h4>
                         <p className='body'>we are aimed at helping companies across various industries transform their operations </p>
                         <img src={listImg} alt='' />
                     </li>
-                    <li className='offer__list--item'>
+                    <li className={`offer__list--item ${offerClass}`}>
                         <p className='jobs'>08 Jobs</p>
                         <h4>UI/UX Design</h4>
                         <p className='body'>we are aimed at helping companies across various industries transform their operations </p>
                         <img src={listImg} alt='' />
                     </li>
-                    <li className='offer__list--item'>
+                    <li className={`offer__list--item ${offerClass}`}>
                         <p className='jobs'>08 Jobs</p>
                         <h4>Seo</h4>
                         <p className='body'>we are aimed at helping companies across various industries transform their operations </p>
@@ -41,8 +44,8 @@ const Services = () => {
                     </li>
                 </ul>
             </div>
-            <div className='service__recent'>
-                <div className='service__box'>
+            <div className={`service__recent ${boxClass}`}>
+                <div className={`service__box`}>
                     <h2><span className='text'>Recent Work </span><span className='arr'>&rarr;</span></h2>
                     <div className='service__work'>
                         <h3>School website</h3>

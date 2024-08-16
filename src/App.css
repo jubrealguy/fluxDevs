@@ -20,7 +20,7 @@ body{
 
 .day-theme {
   color: #ffffff;
-  background: #0d0d0de5;
+  background: #0d0d0dee;
 }
 
 .dark-theme {
@@ -707,6 +707,10 @@ main {
   margin-bottom: 2.5rem;
 }
 
+.about-night .about__left .head {
+  color: #FFFFFF;
+}
+
 .about__left .body {
   font-size: 1.8rem;
   font-weight: 300;
@@ -736,6 +740,10 @@ main {
   line-height: 1.5;
   font-family: 'Inter';
   color: #000000;
+}
+
+.about-night .about__rating p span {
+  color: #FFFFFF;
 }
 
 .about__rating p span:first-child {
@@ -829,13 +837,21 @@ main {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  gap: 8rem;
 }
 .offer__list--item {
+  height: 47rem;
+  display: flex;
+  flex-direction: column;
   background: #E3E3E3;
   padding: 4rem 8rem 2rem 4rem;
   border-radius: 3rem;
   color: #141438;
+}
+
+.offer-night {
+  color: #E3E3E3;
+  background: #2B2829;
 }
 
 .offer__list--item .jobs {
@@ -856,7 +872,7 @@ main {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 5rem;
+  margin-bottom: auto;
 }
 
 .offer__list--item img {
@@ -923,6 +939,10 @@ main {
   margin-bottom: 2rem;
 }
 
+.service__box-night * {
+  color: #E7EBEF;
+}
+
 .service__work p {
   font-size: 2rem;
   font-weight: 400;
@@ -967,6 +987,7 @@ main {
   line-height: 1.25;
   text-align: center;
   margin-bottom: 2rem;
+  color: #636363;
 }
 
 .service__subscribe form {

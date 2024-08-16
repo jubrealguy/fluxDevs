@@ -1,9 +1,9 @@
 import Services from '../components/Services';
 
-const ServicePage = () => {
+const ServicePage = ({logo, dayLogo}) => {
     return (
         <main>
-            <Services />
+            <Services logo={logo} dayLogo={dayLogo} />
         </main>
     )
 }

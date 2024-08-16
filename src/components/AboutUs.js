@@ -1,8 +1,10 @@
 import aboutImg from '../img/Rectangle 4509.png'
 
-const About = () => {
+const About = ({logo, dayLogo}) => {
+    const aboutClass = logo === dayLogo ? 'about-night' : 'about-day'
+
     return (
-        <section className='about'>
+        <section className={`about ${aboutClass}`}>
             <div className='about__left'>
                 <h3>How it started</h3>
                 <p className='head'>Our Goal is to  transform your Ideas of Business into Reality </p>

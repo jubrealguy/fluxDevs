@@ -1,6 +1,5 @@
 import cover from "../img/Rectangle 4489.png"
 import cardImg from '../img/card-img.png'
-import Question from '../components/Question'
 
 const Projects = () => {
     return (
@@ -50,7 +49,6 @@ const Projects = () => {
                     </li>
                 </ul>
             </div>
-            <Question />
         </section>
     )
 }
