@@ -1,0 +1,108 @@
+/* ***************** P R O J E C T S ****************** */
+
+.projects .cover {
+    background-image: linear-gradient(rgba(217, 217, 217, 0.4), rgba(217, 217, 217, 0.4)), 
+    url("../img/Rectangle 4496.png");
+    background-size: cover;
+    height: 40rem;
+    color: white;
+    padding: 26rem 0 0 10rem;
+    font-family: 'Inter';
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 6rem;
+  }
+  
+  .projects__intro {
+    margin: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-bottom: 8rem;
+  }
+  
+  .projects__intro  {
+    flex: 0 0 50%;
+    height: 43.5rem;
+    border-radius: 2rem;
+  }
+  
+  .projects__intro--text {
+    padding-right: 8rem;
+  }
+  
+  .projects__intro--text h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    color: #F7A400;
+  }
+  
+  .projects__intro--text p {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 6rem;
+  }
+  
+  .projects__recent {
+    padding: 0 5rem;
+  }
+  
+  .projects__recent h2 {
+    font-family: "Inter";
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+  
+  .projects__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+  
+  .projects__list--item {
+    font-family: 'Roboto';
+    border-radius: .8rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 16px 16px 4px #0000001F;
+  
+  }
+  
+  .projects__list--item a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5;
+    margin-bottom: 4rem;
+  }
+  
+  .projects__list--item .content {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  
+  .projects__list--item .date {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5;
+  }
+  
+  .projects__list--item img {
+    width: 29rem;
+    height: 44rem;
+    border-radius: 0px, 8px, 8px, 0px;
+  }

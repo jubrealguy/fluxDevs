@@ -5,7 +5,7 @@ const Faq = ({logo, dayLogo}) => {
     return (
         <section className="faq">
             <div className="faq__box">
-                <h2>Frequently Asked <br />Questions</h2>
+                <h2>Frequently Asked Questions</h2>
                 <ul className={`faq__list ${listClass}`}>
                     <li>
                         <span>What Kind of website do you guys develop?</span>

@@ -1,0 +1,51 @@
+/* ***************** Q U E S T I O N ****************** */
+
+.question {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  .question__one {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+  }
+  
+  .question__one span {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #F7A400;
+  }
+
+  @media screen and (max-width: 750px) {
+    .question__one span {
+      color: inherit;
+    }
+  }
+  
+  .question__two {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .question__two a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5355C4;
+    width: 14.7rem;
+    height: 4.6rem;
+    border-radius: .7rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 1rem;
+  }

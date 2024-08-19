@@ -1,0 +1,80 @@
+/* ***************** A B O U T ****************** */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 3rem 8rem 3rem;
+    gap: 6rem;
+  }
+  
+  .about__left {
+    flex: 0 0 45%;
+    padding: 4rem;
+  }
+  
+  .about__left h3 {
+    font-family: 'Inter';
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #F7A400;
+    margin-bottom: 2.2rem;
+  }
+  
+  .about__left .head {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #14213D;
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-night .about__left .head {
+    color: #FFFFFF;
+  }
+  
+  .about__left .body {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  
+  .about__right img {
+    display: inline-block;
+    width: 58.5rem;
+    height: 36.7rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about__rating {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding: 0 3rem;
+  }
+  
+  .about__rating p {
+    flex: 0 0 50%;
+  }
+  
+  .about__rating p span {
+    display: block;
+    line-height: 1.5;
+    font-family: 'Inter';
+    color: #000000;
+  }
+  
+  .about-night .about__rating p span {
+    color: #FFFFFF;
+  }
+  
+  .about__rating p span:first-child {
+    font-size: 2.4rem;
+    font-weight: 700; 
+  }
+  
+  .about__rating p span:last-child {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }

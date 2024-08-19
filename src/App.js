@@ -28,9 +28,9 @@ function App() {
       <Header logo={logo} themeClick={themeClick} dayLogo={dayLogo} />
       <Routes>
             <Route path='/' element={<HomePage logo={logo} dayLogo={dayLogo} />}></Route>
-            <Route path='/about' element={<AboutPage/>}></Route>
-            <Route path='/services' element={<ServicePage />}></Route>
-            <Route path='/projects' element={<ProjectsPage />}></Route>
+            <Route path='/about' element={<AboutPage logo={logo} dayLogo={dayLogo}/>}></Route>
+            <Route path='/services' element={<ServicePage logo={logo} dayLogo={dayLogo} />}></Route>
+            <Route path='/projects' element={<ProjectsPage logo={logo} dayLogo={dayLogo} />}></Route>
           </Routes>
       <Footer />
     </div>

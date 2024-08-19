@@ -1,0 +1,260 @@
+/* *****************  S E R V I C E S ****************** */
+
+.service__request{
+    margin: 4.5rem 6rem;
+    display: flex;
+    gap: 4.7rem;
+  }
+  
+  .service__request .bolder {
+    flex:  0 0 60%;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 7.3rem;
+  }
+  
+  .service__request p .bold {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+  }
+  
+  .service__request .light {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  .service__request button {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    background: #4144BD;
+  
+    font-family: "Inter";
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: center;
+    color: #FAFAFA;
+  }
+  
+  .cover-box {
+    background-image: url("../img/Rectangle 4500.png");
+    background-size: cover;
+    height: 55rem;
+    margin-bottom: 6rem;
+  }
+  
+  .offer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  
+  .offer h3 .text {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.64rem;
+    margin-right: 1.5rem;
+  
+  }
+  
+  .offer h3 .arr {
+    width: Fixed (30.72px)px;
+    height: Fixed (30.72px)px;
+    padding: .6rem 1rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    border: 1.75px solid #F7A400;
+    border-radius: 50%;
+    color: #F7A400;
+  }
+  
+  .offer__list {
+    margin: 0 5rem 7.5rem 5rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+  }
+  .offer__list--item {
+    height: 47rem;
+    display: flex;
+    flex-direction: column;
+    background: #E3E3E3;
+    padding: 4rem 8rem 2rem 4rem;
+    border-radius: 3rem;
+    color: #141438;
+  }
+  
+  .offer-night {
+    color: #E3E3E3;
+    background: #2B2829;
+  }
+  
+  .offer__list--item .jobs {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .offer__list--item h4 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .offer__list--item .body {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: auto;
+  }
+  
+  .offer__list--item img {
+    display: inline-block;
+    width: 6.7rem;
+    height: 5.8rem;
+    border-radius: 1.1rem;
+  }
+  
+  .service__recent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8rem;
+    margin:  0 5rem;
+  }
+  
+  .service__box h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+  
+  .service__box h2 .text {
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+    margin-right: 3rem;
+  }
+  
+  .service__box h2 .arr {
+    color: #433E3F;
+    padding: 1.25rem;
+    border: 2.18px solid #433E3F;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .service__work {
+    color: #1A1B4B;
+    margin-bottom: 5rem;
+  }
+  
+  .service__work h3 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  .service__work img {
+    width: 100%;
+    height: 55remrem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service__work h5 {
+    font-family: "Inter";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service__box-night * {
+    color: #E7EBEF;
+  }
+  
+  .service__work p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service__work a {
+    text-decoration: none;
+    color: #F7A400;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.74rem;
+  }
+  
+  .service {
+    position: relative;
+    margin-bottom: 15rem;
+  }
+  
+  .service__subscribe {
+    margin: 0 auto;
+    padding: 4rem 10%;
+    background: #F4C790;
+    width: 50%;
+    border-radius: 1rem;
+    font-family: 'Source Sans Pro';
+    box-shadow: 0px 4px 5px 0px #0000001A;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service__subscribe p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #636363;
+  }
+  
+  .service__subscribe form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .service__subscribe input {
+    width: 27.4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+    padding-left: 1rem;
+    border: 1px solid #A4A5DF;
+  }
+  
+  .service__subscribe button {
+    height: 4rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+    background: #A4A5DF;
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 2rem;
+  }

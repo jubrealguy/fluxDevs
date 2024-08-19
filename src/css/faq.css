@@ -1,0 +1,131 @@
+/* ***************** F A Q ****************** */
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    margin: 0 3rem;
+  }
+  
+  .faq__box {
+    flex: 0 0 55%;
+  }
+  
+  .faq__box h2 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 7.5rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    .faq {
+      flex-direction: column;
+      margin-bottom: 15rem;
+    }
+  }
+  
+  .faq__list {
+    list-style: none;
+  }
+  
+  .faq__box .faq__list-night, .faq__box .faq__list-night * {
+    filter: invert(100%);
+  }
+  
+  .faq__list li {
+    background: #F9F9FC;
+    padding: 1.5rem 4rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  
+  .faq__list li span {
+    margin-right: auto;
+    font-family: 'Inter';
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+  }
+  
+  .faq__specialist {
+    padding: 10rem 4.5rem 0 4.5rem;
+    position: relative;
+  }
+  
+  .faq__specialist *:not(:nth-child(2)) {
+    position: absolute;
+  }
+  
+  .one {
+    top: 0;
+    left: 0;
+  }
+  
+  .two {
+    margin-top: -7rem;
+  }
+  
+  .three {
+    bottom: 0rem;
+    right: 0;
+  }
+  
+  .four {
+    left: 0;
+    bottom: -4.5rem;
+  }
+  
+  .five {
+    right: 0;
+    bottom: -9rem;
+  }
+  
+  .faq__specialist div {
+    padding: 1rem 2rem;
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.82px;
+    letter-spacing: -0.03em;
+    box-shadow: 0px 4px 4px 0px #00000033;
+    text-align: right;
+  }
+  
+  .faq .faq__specialist-night div  {
+    filter: (invert(100%));
+  }
+  
+  .faq__specialist div span:first-child {
+    color: #F7A400;
+    border: 1px solid #F7A400;
+    border-radius: 50%;
+    padding: .5rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .faq__specialist div span:nth-child(2) {
+    display: inline-block;
+    left: 4rem;
+    margin-left: 5rem;
+  }
+  
+  .faq__specialist p {
+    background: #F9F9FC;
+    padding: 10rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  .faq .faq__specialist-night p  {
+    background: inherit;
+  }
