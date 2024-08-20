@@ -101,6 +101,84 @@
   text-decoration: none;
 }
 
+.hamburger {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  z-index: 101;
+}
+
+.header__nav-mobile {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 60%;
+  background: white;
+  padding: 2rem 4rem;
+  z-index: 100;
+}
+
+.navGround-night {
+  background: black;
+}
+
+.header__box-mobile {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  margin-bottom: 5rem;
+}
+
+.header__box-mobile img {
+  width: 3.1rem;
+  margin-right: 1.6rem;
+}
+
+.header__box-mobile a {
+  width: 12rem;
+  height: 4.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: .7rem;
+  background: #4144BD;
+  color: #ffffff!important;
+  text-decoration: none;
+}
+
+.header__list-mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 7.5rem;
+}
+
+.header__list-mobile li .active {
+  color: #F7A400;
+}
+
+.header__list-mobile li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5
+}
+
+
+@media screen and (max-width: 750px) {
+  .hamburger {
+    display: block;
+  }
+  
+}
+
 @media screen and (max-width: 900px) {
   .header {
     padding: 1rem 1.5rem;
