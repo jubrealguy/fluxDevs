@@ -36,7 +36,7 @@ const Header = ({ logo, themeClick, dayLogo }) => {
             </nav>
 
     return (
-        <>
+        
         <header className={`header ${headerClass}`}>
             <h1 className='header__primary'>
                 <img src={brand} alt='' />
@@ -60,7 +60,7 @@ const Header = ({ logo, themeClick, dayLogo }) => {
         
         </header>
         
-        </>
+        
     )
 }
 
