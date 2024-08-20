@@ -283,7 +283,7 @@
     }
 
     .cover-box {
-      height: 45rem;
+      height: 35rem;
     }
 
     .offer__list {
@@ -307,5 +307,10 @@
     .service__subscribe form {
       width: 100%;
     }
+  }
 
+  @media screen and (max-width: 500px) {
+    .cover-box {
+      height: 27.5rem;
+    }
   }
