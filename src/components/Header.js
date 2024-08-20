@@ -24,7 +24,7 @@ const Header = ({ logo, themeClick, dayLogo }) => {
     const navMobile = <nav className={`header__nav-mobile ${navGround}`}>
                 <div className='header__box-mobile'>
                     <img src={logo} alt='' onClick={themeClick}/>
-                    <a href='##' onClick={themeClick}>{logo === dayLogo ? "Dark Mode" : "Light Mode"}</a>
+                    <a href='##' onClick={themeClick}>{logo === dayLogo ? "Light Mode" : "Dark Mode"}</a>
                 </div>
                 <ul className='header__list-mobile'>
                     <li><Link to='/' className={isActive === 1 ? 'active': ''} onClick={() => makeActive(1)}>Home</Link></li>
