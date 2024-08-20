@@ -29,7 +29,27 @@ const TeamData = [
         id: 5,
         img: img5,
         title: 'Frontend Dev'
-    }
+    },
+    {
+        id: 6,
+        img: img1,
+        title: 'C.T.O'
+    },
+    {
+        id: 7,
+        img: img2,
+        title: 'Chief Frontend Dev'
+    },
+    {
+        id: 8,
+        img: img3,
+        title: 'Lead Designer'
+    },
+    {
+        id: 9,
+        img: img4,
+        title: 'Chief Backend Dev'
+    },
 ]
 
 export default TeamData

@@ -12,7 +12,7 @@ const Projects = () => {
         const fetchData = async () => {
             try {
                 // const url = `https://cors-anywhere.herokuapp.com/https://fluxdevsng.pythonanywhere.com/api/projects`;
-                const url = "https://fluxdevsng.pythonanywhere.com/api/projects"
+                const url = "https://fluxdevsng.pythonanywhere.com/api/projects/?format=json"
                 const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
