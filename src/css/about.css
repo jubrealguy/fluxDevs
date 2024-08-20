@@ -5,14 +5,14 @@
     justify-content: center;
     align-items: center;
     margin: 4rem 3rem 8rem 3rem;
-    gap: 6rem;
+    gap: 4.5rem;
   }
   
   .about__left {
-    flex: 0 0 45%;
+    flex: 0 0 50%;
     padding: 4rem;
   }
-  
+
   .about__left h3 {
     font-family: 'Inter';
     font-size: 1.6rem;
@@ -42,8 +42,8 @@
   
   .about__right img {
     display: inline-block;
-    width: 58.5rem;
-    height: 36.7rem;
+    width: 100%;
+    height: 100%;
     margin-bottom: 3rem;
   }
   
@@ -77,4 +77,22 @@
   .about__rating p span:last-child {
     font-size: 1.6rem;
     font-weight: 500;
+  }
+
+  @media screen and (max-width: 750px) {
+    .about {
+      flex-direction: column;
+      margin-top: -5rem;
+    }
+
+    .about__left {
+      text-align: center;
+    }
+
+    .about__right img {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 80%;
+    }
   }

@@ -8,13 +8,15 @@ const Services = ({logo, dayLogo}) => {
     return (
         <section className='service'>
             <div className='service__request'>
-                <p className='bolder'>Request a quote or consultation time <span className='bold'>Get responds between 24hours</span></p>
-                <div>
-                    <p className='light'>We are aimed at helping companies across various industries transform their operations and enhance their digital presence.</p>
-                    <button>Request now</button>
+                <div className='service__request-text'>
+                    <p><span className='bolder'>Request a quote or consultation time</span><span className='bold'>Get responds between 24hours</span></p>
+                    <div className='lighter'>
+                        <p className='light'>We are aimed at helping companies across various industries transform their operations and enhance their digital presence.</p>
+                        <button>Request now</button>
+                    </div>
                 </div>
+                <div className='cover-box'></div>
             </div>
-            <div className='cover-box'></div>
             <div className='offer'>
                 <h3><span className='text'>What we offer </span><span className='arr'>&darr;</span></h3>
                 <ul className='offer__list'>

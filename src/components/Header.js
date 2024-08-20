@@ -10,6 +10,15 @@ const Header = ({ logo, themeClick, dayLogo }) => {
         setIsActive(index)
     }
 
+    const navMobile = <nav className='header__nav-mobile'>
+                <ul className='header__list-mobile'>
+                    <li><Link to='/' className={isActive === 1 ? 'active': ''} onClick={() => makeActive(1)}>Home</Link></li>
+                    <li><Link to='/about' className={isActive === 2 ? 'active': ''} onClick={() => makeActive(2)}>About Us</Link></li>
+                    <li><Link to='/services' className={isActive === 3 ? 'active': ''} onClick={() => makeActive(3)}>Services</Link></li>
+                    <li><Link to='/projects' className={isActive === 4 ? 'active': ''} onClick={() =>makeActive(4)}>Our Projects</Link></li>
+                </ul>
+            </nav>
+
     return (
         <header className={`header ${headerClass}`}>
             <h1 className='header__primary'>
@@ -21,7 +30,7 @@ const Header = ({ logo, themeClick, dayLogo }) => {
                     <li><Link to='/' className={isActive === 1 ? 'active': ''} onClick={() => makeActive(1)}>Home</Link></li>
                     <li><Link to='/about' className={isActive === 2 ? 'active': ''} onClick={() => makeActive(2)}>About Us</Link></li>
                     <li><Link to='/services' className={isActive === 3 ? 'active': ''} onClick={() => makeActive(3)}>Services</Link></li>
-                    <li><Link to='/projects' className={isActive === 4 ? 'active': ''} onClick={() =>makeActive(4)}>Our Projects</Link></li>
+                    <li className='marleft'><Link to='/projects' className={isActive === 4 ? 'active': ''} onClick={() =>makeActive(4)}>Our Projects</Link></li>
                 </ul>
             </nav>
             <div className='header__box'>
