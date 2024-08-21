@@ -3,7 +3,7 @@ import TeamData from '../data/TeamData';
 
 const Team = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const membersPerPage = 6;
+    const membersPerPage = 4;
 
     // Calculate the indices of the members to display
     const indexOfLastMember = currentPage * membersPerPage;
