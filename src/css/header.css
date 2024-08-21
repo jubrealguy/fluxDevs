@@ -84,6 +84,7 @@
 .header__box img {
   width: 3.1rem;
   margin-right: 1.6rem;
+  cursor: pointer;
 }
 
 .header__box a {
@@ -171,6 +172,7 @@
 @media screen and (max-width: 750px) {
   .hamburger {
     display: block;
+    cursor: pointer;
   }
   
 }

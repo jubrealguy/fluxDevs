@@ -4,6 +4,7 @@ import Team from '../components/Team';
 import Faq from '../components/Faq';
 import Question from '../components/Question';
 
+
 const HomePage = ({logo, dayLogo}) => {
     return (
         <main>
