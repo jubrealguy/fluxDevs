@@ -107,6 +107,11 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  transition: all .3s;
+}
+
+.pagination:hover {
+  gap: 1.5rem;
 }
 
 .page {
@@ -114,6 +119,7 @@
   border-radius: .5rem;
   height: 1rem;
   background: gray;
+  transition: all 1s;
 }
 
 .pagination .active {

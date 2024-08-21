@@ -40,6 +40,10 @@ body{
   font-family: 'Euclid Circular A';
 }
 
+a {
+  cursor: pointer;
+}
+
 .day-theme {
   color: #ffffff;
   background: #0d0d0dee;
