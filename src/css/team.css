@@ -123,10 +123,11 @@
   width: 1rem;
   border-radius: .5rem;
   height: 1rem;
-  background: gray;
-  transition: all 1s;
+  background: #1C1C50;
+  transition: all .5s;
 }
 
 .pagination .active {
   width: 4rem;
+  background: #999ADC;
 }
