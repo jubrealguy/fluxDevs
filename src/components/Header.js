@@ -19,6 +19,7 @@ const Header = ({ logo, themeClick, dayLogo }) => {
 
     const makeActive = (index) => {
         setIsActive(index)
+        window.scrollTo(0, 0)
     }
 
     const navMobile = <nav className={`header__nav-mobile ${navGround}`}>

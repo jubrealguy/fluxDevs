@@ -83,6 +83,7 @@
 .team__grid {
   margin: 3rem;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 6rem;
   margin-bottom: 5rem;
 }
