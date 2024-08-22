@@ -7,13 +7,13 @@ import Question from '../components/Question';
 
 const HomePage = ({logo, dayLogo}) => {
     return (
-        <main>
+        <div>
             <Intro logo={logo} dayLogo={dayLogo} />
             <Features logo={logo} dayLogo={dayLogo} />
             <Team />
             <Faq logo={logo} dayLogo={dayLogo} />
             <Question />
-        </main>
+        </div>
     )
 }
 

@@ -26,12 +26,14 @@ function App() {
   return (
     <div className={body}>
       <Header logo={logo} themeClick={themeClick} dayLogo={dayLogo} />
-      <Routes>
-            <Route path='/' element={<HomePage logo={logo} dayLogo={dayLogo} />}></Route>
-            <Route path='/about' element={<AboutPage logo={logo} dayLogo={dayLogo}/>}></Route>
-            <Route path='/services' element={<ServicePage logo={logo} dayLogo={dayLogo} />}></Route>
-            <Route path='/projects' element={<ProjectsPage logo={logo} dayLogo={dayLogo} />}></Route>
-          </Routes>
+      <main>
+        <Routes>
+          <Route path='/' element={<HomePage logo={logo} dayLogo={dayLogo} />}></Route>
+          <Route path='/about' element={<AboutPage logo={logo} dayLogo={dayLogo}/>}></Route>
+          <Route path='/services' element={<ServicePage logo={logo} dayLogo={dayLogo} />}></Route>
+          <Route path='/projects' element={<ProjectsPage logo={logo} dayLogo={dayLogo} />}></Route>
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
