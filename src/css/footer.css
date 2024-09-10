@@ -103,16 +103,16 @@
     padding-right: 10rem;
   }
 
-  @media screen and (max-width: 650px) {
-    .footer__foot {
-      flex-direction: column;
-      text-align: center;
-      padding: 0;
-    }
-  }
-  
   .footer__foot p {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 3rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    .footer__foot {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 0;
+    }
   }

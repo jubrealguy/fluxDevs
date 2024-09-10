@@ -18,12 +18,6 @@
     line-height: 1.5;
     color: #F7A400;
   }
-
-  @media screen and (max-width: 750px) {
-    .question__one span {
-      color: inherit;
-    }
-  }
   
   .question__two {
     font-size: 1.8rem;
@@ -48,4 +42,13 @@
     font-size: 2rem;
     font-weight: 500;
     margin: 0 1rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    .question__two {
+      font-size: 1.6rem;
+    }
+    .question__two a {
+      font-size: 1.8rem;
+    }
   }

@@ -1,6 +1,6 @@
 import brand from '../img/Subtract.png'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import nightHam from '../img/ham-black.png'
 import dayHam from '../img/ham-light.png'
 import dayCancel from '../img/dayCancel.png'
@@ -22,6 +22,22 @@ const Header = ({ logo, themeClick, dayLogo }) => {
         window.scrollTo(0, 0)
     }
 
+    useEffect(() => {
+        const handleOutsideClick = (e) => {
+            if (!e.target.closest('.hamburger')) {
+                setclickedNav(true); 
+            }
+        };
+
+        if (!clickedNav) {
+            document.addEventListener('click', handleOutsideClick);
+        }
+
+        return () => {
+            document.removeEventListener('click', handleOutsideClick);
+        };
+    }, [clickedNav]);
+
     const navMobile = <nav className={`header__nav-mobile ${navGround}`}>
                 <div className='header__box-mobile'>
                     <img src={logo} alt='' onClick={themeClick}/>
@@ -33,7 +49,7 @@ const Header = ({ logo, themeClick, dayLogo }) => {
                     <li><Link to='/services' className={isActive === 3 ? 'active': ''} onClick={() => makeActive(3)}>Services</Link></li>
                     <li><Link to='/projects' className={isActive === 4 ? 'active': ''} onClick={() =>makeActive(4)}>Our Projects</Link></li>
                 </ul>
-                <img src={logo === dayLogo ? nightCancel: dayCancel} onClick={() => setclickedNav(true)} alt='' />
+                <img src={logo === dayLogo ? nightCancel: dayCancel} alt='' />
             </nav>
 
     return (

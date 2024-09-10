@@ -1,11 +1,11 @@
 import introImg from '../img/image 29.png'
 import bulb from '../img/image 16.png'
-import airbnb from '../img/airbnb.png'
-import hubspot from '../img/hubspot.png'
-import google from '../img/google.png'
-import microsoft from '../img/microsoft.png'
-import walmart from '../img/walmart.png'
-import fedex from '../img/fedEx.png'
+// import airbnb from '../img/airbnb.png'
+// import hubspot from '../img/hubspot.png'
+// import google from '../img/google.png'
+// import microsoft from '../img/microsoft.png'
+// import walmart from '../img/walmart.png'
+// import fedex from '../img/fedEx.png'
 import css from '../img/css.png'
 import python from '../img/python.png'
 import reactDay from '../img/react.png'
@@ -32,14 +32,14 @@ const Intro = ({logo, dayLogo}) => {
                     <a href='##'>Get in touch</a>
                 </div>
             </div>
-            <div className='intro__companies'>
+            {/* <div className='intro__companies'>
                 <img src={airbnb} alt='' />
                 <img src={hubspot} alt='' />
                 <img src={google} alt='' />
                 <img src={microsoft} alt='' />
                 <img src={walmart} alt='' />
                 <img src={fedex} alt='' />
-            </div>
+            </div> */}
             <div className={`intro__languages`}>
                 <img src={figma} alt='' />
                 <img src={arr} alt='' />

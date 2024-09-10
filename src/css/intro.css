@@ -1,47 +1,29 @@
-@keyframes slideRight {
-    0% {
-      transform: translateX(0rem);
-    }
-    25% {
-      transform: translateX(20rem);
-    }
-    50% {
-      transform: translateX(0);
-    }
-    75% {
-      transform: translateX(-20rem);
-    }
-    100% {
-      transform: translateX(0rem);
-    }
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-130rem);
+  }
 }
 
-@keyframes slideLeft {
-    0% {
-      transform: translateX(0rem);
-    }
-    25% {
-      transform: translateX(-30rem);
-    }
-    50% {
-      transform: translateX(0);
-    }
-    75% {
-      transform: translateX(30rem);
-    }
-    100% {
-      transform: translateX(0rem);
-    }
+@keyframes rotateImage {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 /* ************* I N T R O ************** */
 
 .intro {
-  margin-bottom: 7rem;
+  margin-bottom: 12rem;
 }
 
 .intro__head {
-  padding: 0 5% 9rem 5%;
+  padding: 0 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,8 +31,11 @@
 }
 
 @media screen and (max-width: 900px) {
+  .intro {
+    margin-bottom: 7rem;
+  }
   .intro__head{
-    padding: 0 2.5% 7rem 2.5%;
+    padding: 0 2.5%;
     gap: 2rem;
   }
 }
@@ -58,7 +43,7 @@
 @media screen and (max-width: 750px) {
   .intro__head{
     flex-direction: column;
-    padding: 0 5% 9rem 5%;
+    padding: 0 5%;
     text-align: center;
   }
 }
@@ -72,12 +57,13 @@
   width: 6rem;
   position: absolute;
   top: 6rem;
-  right: 6rem;
+  right: 3rem;
   transform: rotate(30deg);
 }
 
 .intro__head--img-box .intro_img {
   width: 52.6rem;
+  animation: rotateImage 30s infinite linear;
 }
 
 @media screen and (max-width: 900px) {
@@ -121,10 +107,18 @@
   font-family: 'Inter';
   font-size: 2rem;
   font-weight: 500;
-  display: inline;
+  display: inline-block;
+
+  transition: all .4s;
 }
 
-.intro__companies {
+.intro__head-content a:hover {
+  background: #5355c4b7;
+  transform: translateY(-.5rem);
+  box-shadow: .5rem 1rem 2rem #000000;
+}
+
+/* .intro__companies {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,14 +137,15 @@
   .intro__companies img {
     animation: slideRight 20s linear infinite;
   }
-}
+} */
 
 .intro__languages {
+  width: 100%;
+  margin: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6rem;
-  margin: 0 3rem;
 }
 
 .intro__languages img {
@@ -159,11 +154,13 @@
 
 @media screen and (max-width: 900px) {
   .intro__languages {
-    overflow: hidden;
+    margin-top: 6rem;
+    margin-left: 70rem;
+    width: 100%;
+    animation: slideLeft 2s linear infinite;
   }
 
   .intro__languages img {
     width: 5rem;
-    animation: slideLeft 5s linear infinite;
   }
 }

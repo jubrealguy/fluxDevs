@@ -40,6 +40,11 @@
   padding: 4rem 3.5rem;
   border-radius: 1.8rem;
   background: #F0F0F75C;
+  transition: all .5s;
+}
+
+.features__list li:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 900px) {
@@ -71,6 +76,7 @@
   display: inline-block;
   margin-top: 1.3rem;
   width: 8rem;
+  animation: rotateImage 20s infinite linear;
 }
 
 .trans {
@@ -134,6 +140,7 @@
   text-align: center;
   color: #FFB012;
   margin-bottom: 1.8rem;
+  text-align: left;
 }
 
 .features__details ul {
