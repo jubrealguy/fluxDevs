@@ -42,14 +42,15 @@ const Projects = () => {
                 {data.map((project) => {
                     return (
                         <li key={project?.id} className="projects__list--item">
-                            <div>
-                                <Link to={project.link.replace('/projects', '')}>Click to view</Link>
-                                <h3 className="content">{project?.name}</h3>
-                                <p>{project?.description}</p>
-                                <p>{project?.more_details}</p>
-                                <p className="date">{`Project update: ${formatDate(project.date)}`}</p>
-                            </div>
-                            <img src={project.image} alt="" />
+                            <Link to={project.link.replace('/projects', '')}>
+                                <div>
+                                    <h3>{project?.name}</h3>
+                                    <p>{project?.description}</p>
+                                    <p>{project?.more_details}</p>
+                                    <p className="date">{`Project update: ${formatDate(project.date)}`}</p>
+                                </div>
+                                <img src={project.image} alt="" />
+                            </Link>
                         </li>
                     )
                 })}

@@ -48,7 +48,6 @@
   }
 }
 
-
 .intro__head--img-box {
   position: relative;
 }
@@ -63,7 +62,7 @@
 
 .intro__head--img-box .intro_img {
   width: 52.6rem;
-  animation: rotateImage 30s infinite linear;
+  /* animation: rotateImage 30s infinite linear; */
 }
 
 @media screen and (max-width: 900px) {
@@ -148,8 +147,19 @@
   gap: 6rem;
 }
 
+.hidden-img {
+  display: none;
+}
+
+.shown-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .intro__languages img {
   width: 6.5rem;
+  margin-right: 4rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -164,11 +174,14 @@
 
 .slide-wrapper {
   display: flex;
-  animation: slide 10s linear infinite;
+  animation: slide 25s linear infinite;
+}
+
+.hidden-img {
+  display: flex;
 }
 
   .intro__languages img {
-    width: 4rem;
-    margin-right: 6rem;
+    width: 5rem;
   }
 }

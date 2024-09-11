@@ -51,7 +51,7 @@ const Services = ({logo, dayLogo}) => {
                     <h2><span className='text'>Recent Work </span><span className='arr'>&rarr;</span></h2>
                     <div className='service__work'>
                         <h3>School website</h3>
-                        <img src={offerImg} alt='' />
+                        <div className='img-box'><img src={offerImg} alt='' /></div>
                         <h5>We designed a full functional school website that captured the details of 120 students</h5>
                         <p>Requirement Gathering: We started by thoroughly understanding your needs, ensuring that every essential feature, from the student portal to the event calendar, was clearly defined and aligned with your school’s goals.</p>
                         <p>Development: With the designs approved, we moved into the development phase, where we built the site from the ground up. This included integrating all the necessary functionalities like enrollment forms, online payments, and secure access to student information.</p>
@@ -60,7 +60,7 @@ const Services = ({logo, dayLogo}) => {
                 </div>
                 <div className='service__work'>
                     <h3>School website</h3>
-                    <img src={offerImg} alt='' />
+                    <div className='img-box'><img src={offerImg} alt='' /></div>
                     <h5>We designed a full functional school website that captured the details of 120 students</h5>
                     <p>Requirement Gathering: We started by thoroughly understanding your needs, ensuring that every essential feature, from the student portal to the event calendar, was clearly defined and aligned with your school’s goals.</p>
                     <p>Development: With the designs approved, we moved into the development phase, where we built the site from the ground up. This included integrating all the necessary functionalities like enrollment forms, online payments, and secure access to student information.</p>
