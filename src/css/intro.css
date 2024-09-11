@@ -1,9 +1,9 @@
-@keyframes slideLeft {
+@keyframes slide {
   0% {
-    transform: translateX(0);
+      transform: translateX(0);
   }
   100% {
-    transform: translateX(-130rem);
+      transform: translateX(-100%);
   }
 }
 
@@ -154,13 +154,21 @@
 
 @media screen and (max-width: 900px) {
   .intro__languages {
-    margin-top: 6rem;
-    margin-left: 70rem;
+    margin-top: 6.5rem;
+    padding-left: 40rem;
+    justify-content: flex-start;
+    overflow: hidden;
     width: 100%;
-    animation: slideLeft 2s linear infinite;
-  }
+    position: relative;
+}
+
+.slide-wrapper {
+  display: flex;
+  animation: slide 10s linear infinite;
+}
 
   .intro__languages img {
-    width: 5rem;
+    width: 4rem;
+    margin-right: 6rem;
   }
 }

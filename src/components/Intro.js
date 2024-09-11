@@ -40,15 +40,49 @@ const Intro = ({logo, dayLogo}) => {
                 <img src={walmart} alt='' />
                 <img src={fedex} alt='' />
             </div> */}
-            <div className={`intro__languages`}>
-                <img src={figma} alt='' />
-                <img src={arr} alt='' />
-                <img src={slack} alt='' />
-                <img src={logo === dayLogo ? reactNight : reactDay} alt='' />
-                <img src={wordpress} alt='' />
-                <img src={python} alt='' />
-                <img src={logo === dayLogo ? githubNight : githubDay} alt='' />
-                <img src={css} alt='' />
+            <div className="intro__languages">
+                <div className="slide-wrapper">
+                    <img src={figma} alt="" />
+                    <img src={arr} alt="" />
+                    <img src={slack} alt="" />
+                    <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
+                    <img src={wordpress} alt="" />
+                    <img src={python} alt="" />
+                    <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
+                    <img src={css} alt="" />
+                    <img src={figma} alt="" />
+                    <img src={arr} alt="" />
+                    <img src={slack} alt="" />
+                    <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
+                    <img src={wordpress} alt="" />
+                    <img src={python} alt="" />
+                    <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
+                    <img src={css} alt="" />
+                    <img src={figma} alt="" />
+                    <img src={arr} alt="" />
+                    <img src={slack} alt="" />
+                    <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
+                    <img src={wordpress} alt="" />
+                    <img src={python} alt="" />
+                    <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
+                    <img src={css} alt="" />
+                    <img src={figma} alt="" />
+                    <img src={arr} alt="" />
+                    <img src={slack} alt="" />
+                    <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
+                    <img src={wordpress} alt="" />
+                    <img src={python} alt="" />
+                    <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
+                    <img src={css} alt="" />
+                    <img src={figma} alt="" />
+                    <img src={arr} alt="" />
+                    <img src={slack} alt="" />
+                    <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
+                    <img src={wordpress} alt="" />
+                    <img src={python} alt="" />
+                    <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
+                    <img src={css} alt="" />
+                </div>
             </div>
         </section>
     )
