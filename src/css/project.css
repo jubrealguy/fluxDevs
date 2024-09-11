@@ -66,7 +66,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 8rem;
   }
   
   .projects__list--item {
@@ -74,6 +74,7 @@
     border-radius: .8rem;
     padding-left: 2rem;
     box-shadow: 0px 16px 16px 4px #0000001F;
+    height: 45rem;
   }
 
   .projects__list--item a {

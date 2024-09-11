@@ -25,7 +25,6 @@ const Intro = ({logo, dayLogo}) => {
                 <div className='intro__head--img-box'>
                     <img src={bulb} alt='' className='bulb1' />
                     <img src={introImg} alt='' className='intro_img' />
-                    {/* <iframe src="https://lottie.host/embed/1cf3a382-487e-4a28-839f-ec6893794850/sC54aS5iJp.json" className='intro_img' ></iframe> */}
                 </div>
                 <div className='intro__head-content'>
                     <p>We Provide Digital Solutions.</p>
