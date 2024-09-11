@@ -1,5 +1,5 @@
 // import introImg from '../img/image 29.png'
-import introImg from '../img/Animation - 1726093993869.gif'
+import introImg from '../img/Anim.gif'
 import bulb from '../img/image 16.png'
 // import airbnb from '../img/airbnb.png'
 // import hubspot from '../img/hubspot.png'

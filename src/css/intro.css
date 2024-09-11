@@ -62,6 +62,7 @@
 
 .intro__head--img-box .intro_img {
   width: 52.6rem;
+  mix-blend-mode: multiply;
   /* animation: rotateImage 30s infinite linear; */
 }
 
@@ -80,7 +81,7 @@
   bottom: -2rem;
   right: 7.5%;
   width: 9.8rem;
-  z-index: -2;
+  z-index: 4;
 }
 
 .intro__head-content p:first-child {
