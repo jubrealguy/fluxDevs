@@ -175,7 +175,7 @@
 
 .slide-wrapper {
   display: flex;
-  animation: slide 25s linear infinite;
+  animation: slide 70s linear infinite;
 }
 
 .hidden-img {

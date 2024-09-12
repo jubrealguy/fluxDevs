@@ -19,6 +19,13 @@ import figma from '../img/figma.png'
 import arr from '../img/arr.png'
 
 const Intro = ({logo, dayLogo}) => {
+    const images = [
+        figma, arr, slack, logo === dayLogo ? reactNight : reactDay,
+        wordpress, python, logo === dayLogo ? githubNight : githubDay,
+        css
+    ];
+
+    const repeatedImages = Array(20).fill(images).flat();
     return (
         <section className='intro'>
             <div className='intro__head'>
@@ -44,72 +51,14 @@ const Intro = ({logo, dayLogo}) => {
             <div className="intro__languages">
                 <div className="slide-wrapper">
                     <div className='shown-img'>
-                        <img src={figma} alt="" />
-                        <img src={arr} alt="" />
-                        <img src={slack} alt="" />
-                        <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
-                        <img src={wordpress} alt="" />
-                        <img src={python} alt="" />
-                        <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
-                        <img src={css} alt="" />
+                        {images.map((src, index) => (
+                            <img key={index} src={src} alt="" />
+                        ))}
                     </div>
                     <div className='hidden-img'>
-                        <img src={figma} alt="" />
-                        <img src={arr} alt="" />
-                        <img src={slack} alt="" />
-                        <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
-                        <img src={wordpress} alt="" />
-                        <img src={python} alt="" />
-                        <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
-                        <img src={css} alt="" />
-                        <img src={figma} alt="" />
-                        <img src={arr} alt="" />
-                        <img src={slack} alt="" />
-                        <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
-                        <img src={wordpress} alt="" />
-                        <img src={python} alt="" />
-                        <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
-                        <img src={css} alt="" />
-                        <img src={figma} alt="" />
-                        <img src={arr} alt="" />
-                        <img src={slack} alt="" />
-                        <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
-                        <img src={wordpress} alt="" />
-                        <img src={python} alt="" />
-                        <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
-                        <img src={css} alt="" />
-                        <img src={figma} alt="" />
-                        <img src={arr} alt="" />
-                        <img src={slack} alt="" />
-                        <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
-                        <img src={wordpress} alt="" />
-                        <img src={python} alt="" />
-                        <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
-                        <img src={css} alt="" />
-                        <img src={figma} alt="" />
-                        <img src={arr} alt="" />
-                        <img src={slack} alt="" />
-                        <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
-                        <img src={wordpress} alt="" />
-                        <img src={python} alt="" />
-                        <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
-                        <img src={css} alt="" />
-                        <img src={figma} alt="" />
-                        <img src={arr} alt="" />
-                        <img src={slack} alt="" />
-                        <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
-                        <img src={wordpress} alt="" />
-                        <img src={python} alt="" />
-                        <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
-                        <img src={css} alt="" />
-                        <img src={figma} alt="" />
-                        <img src={arr} alt="" />
-                        <img src={slack} alt="" />
-                        <img src={logo === dayLogo ? reactNight : reactDay} alt="" />
-                        <img src={wordpress} alt="" />
-                        <img src={python} alt="" />
-                        <img src={logo === dayLogo ? githubNight : githubDay} alt="" />
-                        <img src={css} alt="" />
+                        {repeatedImages.map((src, index) => (
+                            <img key={index} src={src} alt="" />
+                        ))}
                     </div>
                     
                 </div>
